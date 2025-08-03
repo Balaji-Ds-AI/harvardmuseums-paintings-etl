@@ -1,0 +1,10 @@
+ipykernel
+pandas
+numpy
+matplotlib
+scikit-learn
+requests
+mysql-connector-python
+sqlalchemy
+streamlit
+python-dotenv
