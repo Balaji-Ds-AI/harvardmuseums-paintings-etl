@@ -66,4 +66,4 @@ It is modular and scalable to support additional classifications in the future.
 **Credits
 Data Source: Harvard Art Museums API
 
-Project by: Balaji.k  (Data Science Portfolio)
+Project by: Balaji.k  

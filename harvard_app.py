@@ -93,7 +93,53 @@ with tab3:
             df = pd.DataFrame(rows, columns=cols)
             st.dataframe(df)
             st.code(query_options[selected_query])
+
+            if selected_query == "Top 5 Cultures (Paintings)":
+                st.bar_chart(
+                data=df,
+                x="culture",
+                y="count",
+                x_label="Culture",
+                y_label="Number of Paintings",
+                horizontal=True,
+                use_container_width=True
+            )
+            
+
+            elif selected_query == "Top 10 Colors Used in Paintings":
+                st.bar_chart(
+                data=df,
+                x="color",
+                y=df.columns[1],  # COUNT(*)
+                x_label="Color",
+                y_label="Usage Count",
+                use_container_width=True
+            )
+            
+
+            elif selected_query == "Top 10 Titles in Paintings":
+                st.write("📋 Titles are best viewed as a table.")
+
             cursor.close()
             conn.close()
         except Exception as e:
             st.error(f" Query failed: {e}")
+            
+        
+           
+     
+          
+
+
+
+            
+
+
+
+
+
+
+           
+  
+
+                
